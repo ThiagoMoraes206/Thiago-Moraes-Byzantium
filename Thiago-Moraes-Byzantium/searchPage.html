@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa — Byzantium</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+
+        <form action="searchPage.html" method="get" class="searchForm">
+            <input type="search" name="q" placeholder="Pesquisar..." class="searchInput">
+            <button type="submit" class="btnSearch">&#128269;</button>
+        </form>
+    </nav>
+
+    <header class="cabecalho">
+        <h1>Resultados da pesquisa</h1>
+        <p>Você pesquisou por: <span id="search-term"></span></p>
+    </header>
+
+    <main class="principal">
+        <section class="resultados">
+            <div id="search-results"></div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2026 Byzantium. Thiago Ignácio de Moraes. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>
