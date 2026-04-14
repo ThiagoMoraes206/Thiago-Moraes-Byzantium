@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byzantium</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<!---Menu--->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+
+        <form action="searchPage.html" method="get" class="searchForm">
+            <input type="search" name="search" placeholder="Pesquisar..." class="searchInput">
+            <button type="submit" class="btnSearch">&#128269;</button>
+        </form>
+    </nav>
+<!---Página principal--->
+    <div id="banner" class="banner-container">
+        <img src="assets/img/justinianMosaic.jpg" alt="Banner do mosaico bizantino imperador Justiniano" width="100%" class="banner-image">
+    </div>
+
+    <header class="cabecalho">
+        <h1>Guarda Varegues</h1>
+        <p>Conhecendo a guarda pessoal dos Impéradores Byzantinos.</p>
+    </header>
+
+    <main class="principal">
+        <article class="artigo">
+            <h2>A elite Byzantina</h2>
+            <div class="texto-imagem">
+                <div>
+                    <p>
+                        Em 987, o imperador Basil II surpreendeu o traidor Bardas Focas, que se rebelou contra ele,
+                        ao recrutar um grupo de guerreiros vikings para sua guarda pessoal. Basil II havia feito um acordo com o príncipe Vladimir I de Kiev
+                        que em troca pelos envio de tropas pra Constantinopla, Vladimir se casou com a irmã do Imperador Romano.
+                    </p>
+                    <p>
+                        Varegue, como eram chamados os vikings(principalmente Suecos). Depois de sua formão em 987, a Guarda Varegues
+                        se tornou a guarda pessoal dos imperadores bizantinos, servindo por quase 500 anos. Eles eram conhecidos por sua
+                        lealdade inabalável e habilidades de combate excepcionais.
+                    </p>
+                </div>
+                <img src="assets/img/varangianGuard.png" alt="Guarda Varegues" class="imagem-artigo">
+            </div>
+<!---Tabela Comparação--->
+    <section class="comparacao">
+        <h2>Equipamento</h2>
+        <table class="tabela-comparacao">
+            <thead>
+                <tr>
+                    <th>Armas</th>
+                    <th>Armadura</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Machado Dinamarquês</td>
+                    <td>Cota de Malha</td>
+                </tr>
+                <tr>
+                    <td>Espadas típicas escandinavas</td>
+                    <td>Elmo cônico</td>
+                </tr>
+                <tr>
+                    <td>Escudos Redondos</td>
+                    <td>Gambeson(Armadura alcochoada, as vezes usada ao invês da malha)</td>
+                </tr>
+                <tr>
+                    <td>Lanças</td>
+                    <td>Proteções de aço para pernas e braços</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+        </article>
+
+        <article class="artigo referencias">
+            <h2>Referências</h2>
+            <ul class="lista-referencias">
+                <li><a href="https://aventurasnahistoria.com.br/noticias/reportagem/historia-guarda-varangiana-vikings-bizantino.phtml" target="_blank">A Guarda Varangiana: Os Vikings que Protegiam o Império Bizantino</a></li>
+            </ul>
+        </article>
+    </main>
+<!--Curiosidades-->
+    <section class="curiosidades">
+        <h2>Curiosidades</h2>
+        <p>Aqui você encontrará algumas curiosidades sobre o Império Bizantino.</p>
+
+        <button id="btn-trivia" class="btn-curiosidades" onclick="toggleList()">
+            <span id="btn-label">Ver curiosidades</span>
+            <span id="btn-arrow">▼</span>
+        </button>
+<!--Lista de curiosidades, inicialmente oculta-->
+        <div id="trivia-list" class="lista-curiosidades" style="display: none;">
+            <ul>
+                <li>O rei da Noruêga, Harald Hardråde, serviu como comandante da guarda de 1034 a 1043, acumulando tanta riqueza que financiou sua campanha à coroa norueguesa.</li>
+                <li>Após a conquista normanda da Inglaterra em 1066, muitos anglo-saxões exilados juntaram-se à guarda, mudando a composição étnica do grupo, que era originalmente de escandinavos..</li>
+                <li>Relatos sugerem que os varegues tinham padrões de conduta; se um membro cometesse um crime, como um estupro, os próprios companheiros podiam matar o agressor e pagar o wergild (preço do sangue) à vítima.</li>
+                <li>Pedras Rúnicas: Existem pedras rúnicas na Suécia dedicadas a guerreiros que viajaram para a "Grécia" (Bizâncio) e serviram na guarda.</li>
+            </ul>
+        </div>
+    </section>
+<!--Rodapé-->
+    <footer class="rodape">
+        <p>&copy; 2026 Byzantium. Thiago Ignácio de Moraes. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>

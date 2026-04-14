@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byzantium</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<!---Menu--->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+
+        <form action="searchPage.html" method="get" class="searchForm">
+            <input type="search" name="search" placeholder="Pesquisar..." class="searchInput">
+            <button type="submit" class="btnSearch">&#128269;</button>
+        </form>
+    </nav>
+<!---Página principal--->
+    <div id="banner" class="banner-container">
+        <img src="assets/img/byzantineMosaic.jpg" alt="Banner do mosaico bizantino" width="100%" class="banner-image">
+    </div>
+
+    <header class="cabecalho">
+        <h1>Bem-vindo ao Byzantium</h1>
+        <p>Explorando a história e cultura de Bizâncio (Império Romano do Oriente)</p>
+    </header>
+
+    <main class="principal">
+        <article class="artigo">
+            <h2>O que é Bizâncio?</h2>
+            <p>
+                Bizâncio, também conhecido como Império Romano do Oriente, foi um império que existiu
+                de 330 a 1453 d.C. Sua capital era Constantinopla (atual Istambul) e foi um dos mais
+                duradouros e influentes impérios da história. A história do Império Bizantino começa
+                com Constantino I, que queria uma nova capital para Roma, uma que ligasse o continente
+                europeu e asiático. O Império começou de fato em 395 d.C., quando o Império Romano se
+                dividiu entre o Ocidente (cidade de Roma) e o Oriente (Constantinopla). Após a queda
+                do Ocidente em 476 d.C., o Império Bizantino prosperou.
+            </p>
+            <p>
+                O período mais próspero de Bizâncio foi sob o governo de Justiniano, que governou de
+                527 a 565 d.C. Filho de camponeses, Justiniano chegou ao poder por meio de sua
+                inteligência e habilidades políticas. Ficou conhecido por reconquistar territórios do
+                Império Romano do Ocidente, muitos graças aos feitos de Flávio Belisário, conhecido
+                como o "Último Romano", por suas campanhas no Ocidente.
+            </p>
+            <p>
+                Justiniano foi muito influente para o cristianismo da época e construiu a Hagia Sophia,
+                que foi a maior igreja do mundo por mil anos.
+            </p>
+        </article>
+
+        <article class="artigo">
+            <h2>Legado Cultural</h2>
+            <p>
+                O legado cultural de Bizâncio inclui a preservação do conhecimento clássico, a arte
+                bizantina, a arquitetura e a influência na religião cristã ortodoxa. O império também
+                desempenhou um papel crucial na transmissão de conhecimento para o mundo islâmico e
+                para a Europa medieval.
+            </p>
+        </article>
+
+        <article class="artigo referencias">
+            <h2>Referências</h2>
+            <ul class="lista-referencias">
+                <li><a href="https://pt.wikipedia.org/wiki/Imp%C3%A9rio_Bizantino" target="_blank">Império Bizantino — Wikipédia</a></li>
+                <li><a href="https://www.britannica.com/topic/Byzantine-Empire" target="_blank">Byzantine Empire — Britannica</a></li>
+            </ul>
+        </article>
+<!--Mapa-->
+        <article class="artigoMapa">
+            <h2>Mapa de Constantinopla(atualmente Istambul)</h2>
+            <iframe 
+            class="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230038.007826526!2d28.924277663244386!3d41.090130367989204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2sIstambul%2C%20Turquia!5e1!3m2!1spt-BR!2sbr!4v1775855718917!5m2!1spt-BR!2sbr" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </article>
+    </main>
+<!--Section Curiosidades-->
+    <section class="curiosidades">
+        <h2>Curiosidades</h2>
+        <p>Aqui você encontrará algumas curiosidades sobre o Império Bizantino.</p>
+
+        <button id="btn-trivia" class="btn-curiosidades" onclick="toggleList()">
+            <span id="btn-label">Ver curiosidades</span>
+            <span id="btn-arrow">▼</span>
+        </button>
+<!--Lista de curiosidades, inicialmente oculta-->
+        <div id="trivia-list" class="lista-curiosidades" style="display: none;">
+            <ul>
+                <li>Justiniano e Teodora, pelos seus feitos em relação à fé cristã da época, são venerados como santos da Igreja Ortodoxa vinculada ao Patriarcado Ecumênico de Constantinopla.</li>
+                <li>Os bizantinos se chamavam de "romanos" e nunca usaram o termo "Império Bizantino".</li>
+                <li>Constantinopla (atual Istambul) foi a maior cidade da Europa medieval por séculos.</li>
+                <li>O "fogo grego", arma secreta bizantina, queimava mesmo em contato com a água.</li>
+                <li>A religião oficial era o cristianismo. Após o Grande Cisma de 1054, tornou-se o cristianismo ortodoxo.</li>
+                <li>Constantinopla foi fundada por Constantino I e caiu sob o governo de Constantino XI.</li>
+                <li>Os gregos por possuírem uma rixa ocm os Turcos, exigem a devolução de terras como Istambul que até hoje ele recusam por chama-lá assim. Ainda chamam de Constantinopla</li>
+                <li>Existe uma música criada poucos anos atrás que conta algumas das conquistas de Belisário durante o reinado de Justiniano.</li>
+                <iframe data-testid="embed-iframe" 
+                    style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/track/1CSNaLDJMe2OwabywDw8Gv?utm_source=generator" 
+                    width="50%" 
+                    height="152" 
+                    frameBorder="0" 
+                    allowfullscreen="" 
+                    allow="autoplay; 
+                    clipboard-write; 
+                    encrypted-media; 
+                    fullscreen; 
+                    picture-in-picture" 
+                    loading="lazy">
+                    </iframe>
+            </ul>
+        </div>
+    </section>
+<!--Section Tabela-->
+    <section class="comparacao">
+        <h2>Oriente vs Ocidente</h2>
+        <table class="tabela-comparacao">
+            <thead>
+                <tr>
+                    <th>Aspecto</th>
+                    <th>Império do Ocidente</th>
+                    <th>Império do Oriente</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Capital</td>
+                    <td>Roma</td>
+                    <td>Constantinopla</td>
+                </tr>
+                <tr>
+                    <td>Idioma oficial</td>
+                    <td>Latim</td>
+                    <td>Grego</td>
+                </tr>
+                <tr>
+                    <td>Período</td>
+                    <td>395 — 476 d.C.</td>
+                    <td>395 — 1453 d.C.</td>
+                </tr>
+                <tr>
+                    <td>Duração</td>
+                    <td>~81 anos</td>
+                    <td>~1058 anos</td>
+                </tr>
+                <tr>
+                    <td>Religião</td>
+                    <td>Cristianismo Latino</td>
+                    <td>Cristianismo Ortodoxo</td>
+                </tr>
+                <tr>
+                    <td>Queda</td>
+                    <td>Invasões bárbaras</td>
+                    <td>Conquista Otomana</td>
+                </tr>
+                <tr>
+                    <td>Último imperador</td>
+                    <td>Rômulo Augústulo</td>
+                    <td>Constantino XI</td>
+                </tr>
+                <tr>
+                    <td>Economia</td>
+                    <td>Agrária e em declínio</td>
+                    <td>Comercial e próspera</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+<!--Rodapé-->
+    <footer class="rodape">
+        <p>&copy; 2026 Byzantium. Thiago Ignácio de Moraes. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>
